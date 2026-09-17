@@ -1,0 +1,47 @@
+name: Validate distribution metadata
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Validate update manifests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          expected = {
+              Path('oj/updates.json'): 'alertas-pje-ojs@trt1.jus.br',
+              Path('vara/updates.json'): 'alerta-enderecos-negativos-vara@trt1.jus.br',
+          }
+
+          for path, addon_id in expected.items():
+              data = json.loads(path.read_text(encoding='utf-8'))
+              addons = data.get('addons')
+              assert isinstance(addons, dict), f'{path}: campo addons inválido'
+              assert list(addons) == [addon_id], f'{path}: ID Gecko inesperado'
+              updates = addons[addon_id].get('updates')
+              assert isinstance(updates, list), f'{path}: updates deve ser uma lista'
+
+              for item in updates:
+                  assert isinstance(item, dict), f'{path}: item de update inválido'
+                  assert item.get('version'), f'{path}: versão ausente'
+                  link = item.get('update_link', '')
+                  assert link.startswith('https://'), f'{path}: update_link deve usar HTTPS'
+                  assert link.endswith('.xpi'), f'{path}: update_link deve apontar para XPI'
+          PY
+
+      - name: Keep public repository distribution-only
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -z "$(find . -type f \( -name '*.har' -o -name '*.log' -o -name '*.env' -o -name 'code.gs' -o -name '*.py' \) -not -path './.git/*' -print -quit)"

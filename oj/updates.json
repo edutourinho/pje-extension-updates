@@ -1,7 +1,18 @@
 {
   "addons": {
     "alertas-pje-ojs@trt1.jus.br": {
-      "updates": []
+      "updates": [
+        {
+          "version": "0.2.3",
+          "update_link": "https://edutourinho.github.io/pje-extension-updates/releases/oj/alertas-pje-ojs-0.2.3.xpi",
+          "update_hash": "sha256:6bebf0217a003962292c572d9213c572f59922a412d34ed3215c9105851cfe1c",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
+        }
+      ]
     }
   }
 }

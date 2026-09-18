@@ -1,7 +1,18 @@
 {
   "addons": {
     "alerta-enderecos-negativos-vara@trt1.jus.br": {
-      "updates": []
+      "updates": [
+        {
+          "version": "0.1.1",
+          "update_link": "https://edutourinho.github.io/pje-extension-updates/releases/vara/alerta-enderecos-negativos-vara-0.1.1.xpi",
+          "update_hash": "sha256:60a744f15c4105f0979fd6ecf54dc2a16824ac502d230bc7819b3375a57f1a07",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
+        }
+      ]
     }
   }
 }

@@ -11,6 +11,16 @@
               "strict_min_version": "140.0"
             }
           }
+        },
+        {
+          "version": "0.1.2",
+          "update_link": "https://edutourinho.github.io/pje-extension-updates/releases/vara/alerta-enderecos-negativos-vara-0.1.2.xpi",
+          "update_hash": "sha256:4dc8a7b409fc7f82f00052ba1dc5059407350316e8db6a9ef19df6247416cfba",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
         }
       ]
     }

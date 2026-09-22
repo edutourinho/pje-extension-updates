@@ -31,6 +31,16 @@
               "strict_min_version": "140.0"
             }
           }
+        },
+        {
+          "version": "0.2.6",
+          "update_link": "https://edutourinho.github.io/pje-extension-updates/releases/oj/alertas-pje-ojs-0.2.6.xpi",
+          "update_hash": "sha256:33b51d5c9dbe18359ef072dd689bb93ff0c609bb463a404a9e6ebdb1d3c7bd62",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
         }
       ]
     }

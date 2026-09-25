@@ -1,7 +1,18 @@
 {
   "addons": {
     "alertas-pje-pauta@trt1.jus.br": {
-      "updates": []
+      "updates": [
+        {
+          "version": "0.7.1",
+          "update_link": "https://edutourinho.github.io/pje-extension-updates/releases/pauta/alertas-pje-pauta-0.7.1.xpi",
+          "update_hash": "sha256:c3329fbb8263e21895c5e9734a03bc9fb23ef6c5846ec50f5406cd7dc5a9d0c5",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
+        }
+      ]
     }
   }
 }

@@ -11,6 +11,16 @@
               "strict_min_version": "140.0"
             }
           }
+        },
+        {
+          "version": "0.7.2",
+          "update_link": "https://edutourinho.github.io/pje-extension-updates/releases/pauta/alertas-pje-pauta-0.7.2.xpi",
+          "update_hash": "sha256:f6e26eba6f286d6b4a67aab1fbc1d2e885ad1ce080e90e642b0bab63f398f01e",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
         }
       ]
     }

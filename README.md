@@ -10,6 +10,7 @@ Depois que o GitHub Pages estiver habilitado para publicar a branch `main` a par
 
 - OJ: `https://edutourinho.github.io/pje-extension-updates/oj/updates.json`
 - Vara: `https://edutourinho.github.io/pje-extension-updates/vara/updates.json`
+- Pauta: `https://edutourinho.github.io/pje-extension-updates/pauta/updates.json`
 
 Os arquivos `updates.json` começam com a lista `updates` vazia. Portanto, publicar esta estrutura **não ativa nenhuma atualização**. Eles só devem apontar para um XPI depois que o arquivo estiver assinado pela Mozilla, disponível por HTTPS e testado.
 
@@ -20,9 +21,11 @@ No GitHub, abra **Settings → Pages** e, em **Build and deployment**, escolha *
 ## Estrutura
 
 - `oj/updates.json` — manifesto público de atualizações da extensão dos OJs.
-- `oj/releases/` — XPIs assinados destinados à extensão dos OJs.
+- `releases/oj/` — XPIs assinados destinados à extensão dos OJs.
 - `vara/updates.json` — manifesto público de atualizações da extensão da Vara.
-- `vara/releases/` — XPIs assinados destinados à extensão da Vara.
+- `releases/vara/` — XPIs assinados destinados à extensão da Vara.
+- `pauta/updates.json` — manifesto público de atualizações da extensão de alertas da pauta.
+- `releases/pauta/` — XPIs assinados destinados à extensão de alertas da pauta.
 - `index.html` — página pública informativa.
 
 ## Segurança

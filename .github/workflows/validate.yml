@@ -22,6 +22,7 @@ jobs:
           expected = {
               Path('oj/updates.json'): 'alertas-pje-ojs@trt1.jus.br',
               Path('vara/updates.json'): 'alerta-enderecos-negativos-vara@trt1.jus.br',
+              Path('pauta/updates.json'): 'alertas-pje-pauta@trt1.jus.br',
           }
 
           for path, addon_id in expected.items():

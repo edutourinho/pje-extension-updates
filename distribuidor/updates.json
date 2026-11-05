@@ -1,0 +1,18 @@
+{
+  "addons": {
+    "assistente-pje-distribuidor@trt1.jus.br": {
+      "updates": [
+        {
+          "version": "0.1.0",
+          "update_link": "https://edutourinho.github.io/pje-extension-updates/releases/distribuidor/assistente-pje-distribuidor-0.1.0.xpi",
+          "update_hash": "sha256:ee122e9066321dbd746d54ef6b152f358eb8019fcefd055ef6246b434dd65343",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
